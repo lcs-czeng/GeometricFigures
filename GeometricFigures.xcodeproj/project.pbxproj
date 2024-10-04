@@ -8,12 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		163339A82CAECC1F00500327 /* GeometricFiguresApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 163339A72CAECC1F00500327 /* GeometricFiguresApp.swift */; };
-		163339AA2CAECC1F00500327 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 163339A92CAECC1F00500327 /* ContentView.swift */; };
 		163339AC2CAECC2200500327 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 163339AB2CAECC2200500327 /* Assets.xcassets */; };
 		163339AF2CAECC2200500327 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 163339AE2CAECC2200500327 /* Preview Assets.xcassets */; };
 		163339B92CAECC2300500327 /* GeometricFiguresTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 163339B82CAECC2300500327 /* GeometricFiguresTests.swift */; };
 		163339C32CAECC2300500327 /* GeometricFiguresUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 163339C22CAECC2300500327 /* GeometricFiguresUITests.swift */; };
 		163339C52CAECC2300500327 /* GeometricFiguresUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 163339C42CAECC2300500327 /* GeometricFiguresUITestsLaunchTests.swift */; };
+		163339D32CAED0DF00500327 /* TriangleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 163339D22CAED0DF00500327 /* TriangleView.swift */; };
+		163339D62CAED19100500327 /* Triangle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 163339D52CAED19100500327 /* Triangle.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +37,6 @@
 /* Begin PBXFileReference section */
 		163339A42CAECC1F00500327 /* GeometricFigures.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GeometricFigures.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		163339A72CAECC1F00500327 /* GeometricFiguresApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeometricFiguresApp.swift; sourceTree = "<group>"; };
-		163339A92CAECC1F00500327 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		163339AB2CAECC2200500327 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		163339AE2CAECC2200500327 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		163339B42CAECC2300500327 /* GeometricFiguresTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GeometricFiguresTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +44,8 @@
 		163339BE2CAECC2300500327 /* GeometricFiguresUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GeometricFiguresUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		163339C22CAECC2300500327 /* GeometricFiguresUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeometricFiguresUITests.swift; sourceTree = "<group>"; };
 		163339C42CAECC2300500327 /* GeometricFiguresUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeometricFiguresUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		163339D22CAED0DF00500327 /* TriangleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TriangleView.swift; sourceTree = "<group>"; };
+		163339D52CAED19100500327 /* Triangle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Triangle.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,8 +97,8 @@
 			isa = PBXGroup;
 			children = (
 				163339A72CAECC1F00500327 /* GeometricFiguresApp.swift */,
-				163339A92CAECC1F00500327 /* ContentView.swift */,
-				163339AB2CAECC2200500327 /* Assets.xcassets */,
+				163339D42CAED14A00500327 /* Model */,
+				163339D12CAED05600500327 /* Views */,
 				163339AD2CAECC2200500327 /* Preview Content */,
 			);
 			path = GeometricFigures;
@@ -105,6 +107,7 @@
 		163339AD2CAECC2200500327 /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
+				163339AB2CAECC2200500327 /* Assets.xcassets */,
 				163339AE2CAECC2200500327 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
@@ -125,6 +128,22 @@
 				163339C42CAECC2300500327 /* GeometricFiguresUITestsLaunchTests.swift */,
 			);
 			path = GeometricFiguresUITests;
+			sourceTree = "<group>";
+		};
+		163339D12CAED05600500327 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				163339D22CAED0DF00500327 /* TriangleView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		163339D42CAED14A00500327 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				163339D52CAED19100500327 /* Triangle.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,7 +276,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				163339AA2CAECC1F00500327 /* ContentView.swift in Sources */,
+				163339D62CAED19100500327 /* Triangle.swift in Sources */,
+				163339D32CAED0DF00500327 /* TriangleView.swift in Sources */,
 				163339A82CAECC1F00500327 /* GeometricFiguresApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
